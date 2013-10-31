@@ -49,8 +49,6 @@ namespace GeneratorTests
 			var answer = Enumerable.Range(1, 10).Select(x => x.ToString());
 			var gen = new Generator();
 			var sequence = gen.Generate().Take(10);
-			answer.ToList().ForEach(X => Console.WriteLine(X));
-			sequence.ToList().ForEach(X => Console.WriteLine(X));
 			Assert.That(sequence.SequenceEqual(answer));
 		}
     }
