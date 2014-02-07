@@ -7,7 +7,6 @@ Usage
 -----
 
 ```csharp
-using using FizzBuzzGenerator;
 var generator = new Generator();
 var fizzbuzz = generator.Generate(
     Tuple.Create(3, "fizz"),
